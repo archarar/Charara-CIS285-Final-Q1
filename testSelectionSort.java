@@ -28,11 +28,10 @@ testMixed();
         Sortedarr[3] = 9;
         Sortedarr[4] = 10;
         
-        int[] newarr = new int[5];
         SelectionSort.sort(arr);
         
         for(int i=0; i<arr.length; i++) {
-        	assertEquals("POS ERROR AT INDEX " + i, Sortedarr[i], newarr[i]);
+        	assertEquals("POS ERROR AT INDEX " + i, Sortedarr[i], arr[i]);
         }
     }
     
@@ -51,12 +50,11 @@ testMixed();
         Sortedarr[2] = -8;
         Sortedarr[3] = -7;
         Sortedarr[4] = -2;
-        
-        int[] newarr = new int[5];
+
         SelectionSort.sort(arr);
         
         for(int i=0; i<arr.length; i++) {
-        	assertEquals("NEG ERROR AT INDEX " + i, Sortedarr[i], newarr[i]);
+        	assertEquals("NEG ERROR AT INDEX " + i, Sortedarr[i], arr[i]);
         }
     }
     
@@ -75,12 +73,11 @@ testMixed();
         Sortedarr[2] = 0;
         Sortedarr[3] = 2;
         Sortedarr[4] = 8;
-        
-        int[] newarr = new int[5];
+
         SelectionSort.sort(arr);
         
         for(int i=0; i<arr.length; i++) {
-        	assertEquals("MIX ERROR AT INDEX " + i, Sortedarr[i], newarr[i]);
+        	assertEquals("MIX ERROR AT INDEX " + i, Sortedarr[i], arr[i]);
         }
     }
 }
